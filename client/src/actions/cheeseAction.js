@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../Axios";
 
 //Get all Pizza for users
 export const getAllCheese = () => async (dispatch) => {
