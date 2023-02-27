@@ -1,0 +1,53 @@
+.orderSuccess {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderSuccess > svg {
+  font-size: 7vmax;
+  color: tomato;
+}
+.orderSuccess > p {
+  font-size: 2vmax;
+}
+
+.orderSuccess > a {
+  color: white;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1.2vmax "Oswald";
+  text-decoration: none;
+  margin: 2vmax;
+  background: linear-gradient(tomato, tomato 50%, #d2401e 50%, #d2401e);
+  background-size: 100% 200%;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+.orderSuccess > a:hover {
+  background-position: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .orderSuccess {
+    padding-top: 15vmax;
+  }
+  .orderSuccess > a {
+    padding: 3vw 6vw;
+    font: 400 4vw "Oswald";
+    margin: 2vmax;
+  }
+
+  .orderSuccess > svg {
+    font-size: 20vw;
+  }
+  .orderSuccess > p {
+    margin: 2vmax;
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,378 @@
+.pizzaDetails {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  max-width: 100%;
+  padding: 6vmax;
+  box-sizing: border-box;
+  display: flex;
+}
+.makeStyles-root {
+  width: 20vmax;
+}
+
+.pizzaDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.pizzaDetails > div:last-child {
+  align-items: flex-start;
+}
+
+.CarouselImage {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.rightSide {
+  display: flex;
+}
+
+.rightSide .detailsBlock-1 > h2 {
+  color: rgb(54, 54, 54);
+  font: 600 2vmax "Oswald";
+}
+
+.rightSide .detailsBlock-1 > p {
+  color: rgba(54, 54, 54, 0.582);
+  font: 300 1vmax "Oswald";
+}
+
+.rightSide .detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 70%;
+  padding: 1vmax 0;
+}
+
+.rightSide .detailsBlock-2-span {
+  font: 200 0.8vmax cursive;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.rightSide .detailsBlock-3 {
+  width: 70%;
+}
+
+.rightSide .detailsBlock-3 > h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 400 1.8vmax "Oswald";
+  margin: 1vmax 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+.rightSide .detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+}
+
+.rightSide .detailsBlock-3 .sizes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 15px auto;
+}
+.rightSide .detailsBlock-3 .sizes > div {
+  position: relative;
+  cursor: pointer;
+}
+.rightSide .detailsBlock-3 .sizes .small {
+  width: 3.5vmax;
+  height: 3.5vmax;
+}
+.rightSide .detailsBlock-3 .sizes .medium {
+  width: 5vmax;
+  height: 5vmax;
+}
+.rightSide .detailsBlock-3 .sizes .large {
+  width: 7vmax;
+  height: 7vmax;
+}
+.rightSide .detailsBlock-3 .sizes span {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  color: #fff;
+  background-color: #008080b5;
+  padding: 3px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.rightSide .detailsBlock-3-1-1 > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+.rightSide .detailsBlock-3-1-1 > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.rightSide .detailsBlock-3-1-1 > input {
+  border: none;
+  padding: 0.5vmax 0;
+  width: 2vmax;
+  text-align: center;
+  outline: none;
+  font: 500 1vmax "Oswald";
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.rightSide .detailsBlock-3-1 > button:last-child {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s;
+  background-color: #ffbf00;
+  font: 500 0.9vmax "Oswald";
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  margin: 1vmax;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.cheese-price {
+  min-width: 80px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.cheese {
+  margin-bottom: 15px;
+}
+
+.rightSide .detailsBlock-3-1 > button:last-child:hover {
+  background-color: rgb(214, 84, 61);
+}
+
+.rightSide .detailsBlock-3 > p {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 1vmax 0;
+  color: rgba(0, 0, 0, 0.651);
+  font: 400 1.2vmax "Oswald";
+  margin: 1vmax 0;
+  letter-spacing: 1px;
+}
+
+.rightSide .detailsBlock-4 {
+  color: rgba(0, 0, 0, 0.897);
+  font: 500 1.2vmax sans-serif;
+}
+
+.rightSide .detailsBlock-4 > p {
+  color: rgba(0, 0, 0, 0.534);
+  font: 400 1.2vmax "Open sans" !important;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.rightSide .submitReview {
+  border: none;
+  background-color: #ffbf00;
+  font: 500 1vmax "Oswald";
+  border-radius: 20px;
+  padding: 0.6vmax 2vmax;
+  margin: 1vmax 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  letter-spacing: 1px;
+}
+.rightSide .submitReview:hover {
+  background-color: #c5442d;
+  transform: scale(1.1);
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column !important;
+}
+.cancel {
+  color: #fff !important;
+}
+.submit {
+  background: linear-gradient(#1976d2, #1976d2 50%, #0860b8 50%, #0860b8);
+  background-size: 100% 200%;
+  transition: background 0.3s ease-in-out !important;
+  color: #fff !important;
+}
+.submit:hover {
+  background-position: 100% 100%;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem !important;
+  font: 300 1rem "Open sans";
+}
+
+.reviewsHeading {
+  color: #000000be;
+  font: 500 1.4vmax "Oswald";
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  padding: 1vmax;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 4vmax;
+}
+.reviews {
+  display: flex;
+  overflow: auto;
+  padding: 0 50px;
+}
+
+.reviewCard {
+  flex: none;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 3vmax;
+}
+.reviewCard > img {
+  width: 5vmax;
+}
+.reviewCard > p {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 0.9vmax "Oswald";
+}
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8vmax cursive;
+}
+
+.noReviews {
+  font: 400 1.3vmax "Gill Sans";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
+
+@media screen and (max-width: 768px) {
+  .pizzaDetails {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .pizzaDetails > div:last-child {
+    align-items: center;
+  }
+
+  .rightSide .detailsBlock-1 > h2 {
+    font-size: 2.8vmax;
+    text-align: center;
+  }
+
+  .rightSide .detailsBlock-1 > p {
+    text-align: center;
+    font-size: 1vmax;
+  }
+
+  .rightSide .detailsBlock-2 {
+    justify-content: center;
+  }
+  .rightSide .detailsBlock-2 > span {
+    font-size: 1.5vmax;
+  }
+  .rightSide .detailsBlock-3 {
+    width: 80%;
+  }
+
+  .rightSide .detailsBlock-3 > h1 {
+    font: 700 3vmax "Franklin Gothic Medium";
+    text-align: center;
+  }
+
+  .rightSide .detailsBlock-3-1 {
+    flex-direction: column;
+  }
+
+  .rightSide .detailsBlock-3-1-1 {
+    padding: 2vmax 0;
+  }
+  .rightSide .detailsBlock-3-1-1 > button {
+    padding: 1.2vmax;
+    width: 4vmax;
+  }
+
+  .rightSide .detailsBlock-3-1-1 > input {
+    padding: 1.5vmax 0;
+    width: 3vmax;
+    font: 400 1.8vmax "Oswald";
+  }
+
+  .rightSide .detailsBlock-3-1 > button:last-child {
+    font: 500 1.7vmax "Oswald";
+    padding: 1.5vmax;
+    width: 20vmax;
+    margin: 3vmax 0;
+  }
+
+  .rightSide .detailsBlock-3 > p {
+    padding: 2.5vmax 0;
+    text-align: center;
+    font: 400 2vmax "Oswald";
+  }
+
+  .rightSide .detailsBlock-4 {
+    font: 500 2.5vmax sans-serif;
+  }
+
+  .rightSide .detailsBlock-4 > p {
+    font: 300 1.8vmax "Open sans" !important;
+  }
+
+  .rightSide .submitReview {
+    font: 500 1.7vmax "Oswald";
+    padding: 1.5vmax;
+    width: 20vmax;
+    margin: 3vmax 0;
+  }
+
+  .reviewCard > p {
+    font: 600 3vw "Oswald";
+  }
+  .reviewCardComment {
+    font: 300 5vw cursive;
+  }
+  .rightSide .detailsBlock-3 .sizes span {
+    right: -25px;
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+  .rightSide .detailsBlock-3 .sizes .small {
+    width: 4.5vmax;
+    height: 4.5vmax;
+  }
+  .rightSide .detailsBlock-3 .sizes .medium {
+    width: 6vmax;
+    height: 6vmax;
+  }
+  .rightSide .detailsBlock-3 .sizes .large {
+    width: 8vmax;
+    height: 8vmax;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cheese-price {
+    min-width: 30px;
+  }
+}

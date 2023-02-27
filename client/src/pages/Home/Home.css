@@ -1,0 +1,206 @@
+/* .home .second-div {
+  padding-left: 175px;
+} */
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto 3vmax;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+}
+.pizzaCard {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pizzaCard .card_bg {
+  position: absolute;
+  width: 35vmax;
+  height: 90%;
+  left: -33%;
+  top: -14%;
+  opacity: 0;
+  z-index: -1;
+  transform: rotateZ(0) scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.pizzaCard .card_bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.pizzaCard:hover .card_bg {
+  opacity: 0.6;
+  z-index: -1;
+  transform: rotateZ(-15deg) scale(1.03);
+}
+
+.pizzaCard__wrapper {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 0.5vmax;
+  position: relative;
+  justify-content: center;
+}
+
+.pizzaCard__wrapper > img {
+  width: 14vmax;
+}
+
+.pizzaCard__wrapper > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizzaCard__wrapper > div > span {
+  margin: 0.5vmax;
+  font: 300 1vmax "Oswald";
+}
+
+.pizzaCard__wrapper > p {
+  font-size: 1.8vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.pizzaCard__wrapper > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Oswald", "Open sans", Arial, sans-serif;
+  font-size: 1.5vmax;
+}
+
+.pizzaCard__wrapper .pizzaCard__actions-btn {
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  opacity: 0;
+  margin: 0;
+  margin-top: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+.pizzaCard__wrapper .pizzaCard__actions-btn a {
+  padding: 0.5vmax 1vmax;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.pizzaCard__wrapper .pizzaCard__actions-btn a:first-child {
+  background: linear-gradient(tomato, tomato 50%, #d2401e 50%, #d2401e);
+  background-size: 100% 200%;
+  color: #fff;
+}
+
+.pizzaCard__wrapper .pizzaCard__actions-btn a:last-child {
+  background: linear-gradient(#ebebde, #ebebde 50%, #d8d8cc 50%, #e0e0d5);
+  background-size: 100% 200%;
+  color: #000;
+}
+.pizzaCard__wrapper .pizzaCard__actions-btn a:first-child:hover,
+.pizzaCard__wrapper .pizzaCard__actions-btn a:last-child:hover {
+  background-position: 100% 100%;
+}
+.pizzaCard__wrapper:hover .pizzaCard__actions-btn {
+  opacity: 1;
+}
+.third-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70vw;
+  margin: 50px auto;
+}
+.third-div a {
+  background: linear-gradient(tomato, tomato 50%, #d2401e 50%, #d2401e);
+  background-size: 100% 200%;
+  transition: background 0.3s ease-in-out !important;
+  padding: 10px 15px;
+  color: #fff;
+}
+.third-div a:hover {
+  background-position: 100% 100%;
+}
+.fourth-div {
+  margin: 7vmax 0 5vmax;
+}
+@media screen and (max-width: 2500px) {
+  .pizzaCard__wrapper .pizzaCard__actions-btn a {
+    padding: 1vmax 1.5vmax;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .pizzaCard__wrapper .pizzaCard__actions-btn a {
+    padding: 1vmax 1vmax;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .pizzaCard__wrapper .pizzaCard__actions-btn a {
+    padding: 1vmax 0.8vmax;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .pizzaCard__wrapper .pizzaCard__actions-btn a {
+    font-size: 14px;
+    padding: 0.5vmax 0.8vmax;
+  }
+}
+@media screen and (max-width: 998px) {
+  .pizzaCard__wrapper .pizzaCard__actions-btn a {
+    font-size: 10px;
+    padding: 0.5vmax 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pizzaCard__wrapper > p {
+    font-size: 1.7vmax;
+  }
+
+  .pizzaCard__wrapper > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .pizzaCard__wrapper > span {
+    font-size: 1.5vmax;
+  }
+
+  .pizzaCard__wrapper > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Oswald";
+  }
+}
+@media screen and (max-width: 998px) {
+  .home .second-div {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .gift-img {
+    display: none;
+  }
+}

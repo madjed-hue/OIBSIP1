@@ -1,0 +1,138 @@
+.orderDetailsPage {
+  background-color: white;
+  padding: 0 4vmax;
+}
+
+.orderDetailsContainer > h1 {
+  font: 300 2.5vmax "Oswald";
+  margin: 4vmax 0;
+  color: tomato;
+}
+
+.orderDetailsContainer {
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.orderDetailsContainer > p {
+  font: 400 1.8vmax "Oswald";
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 2vmax;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+  margin: 1vmax 0;
+}
+
+.orderDetailsContainerBox > div > p {
+  font: 400 1.2vmax "Oswald";
+  color: black;
+  letter-spacing: 1px;
+}
+.orderDetailsContainerBox > div > span {
+  margin: 0 1vmax;
+  font: 100 1.2vmax "Oswald";
+  color: #575757;
+  letter-spacing: 1px;
+}
+
+.orderDetailsCartItems > p {
+  font: 400 1.8vmax "Oswald";
+}
+
+.orderDetailsCartItems {
+  padding: 2vmax 5vmax;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailsCartItems .orderItemsDetailsHeading {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  margin: 1vmax 0;
+  background-color: tomato;
+  color: #fff;
+  padding: 0.7vmax 2vmax;
+}
+.orderDetailsCartItemsContainer {
+  margin: 1vmax 0;
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: grid;
+  padding: 0 2vmax;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  /* display: flex; */
+  font: 400 1vmax "Oswald";
+  align-items: center;
+  margin: 1vmax 0;
+  /* justify-content: space-between; */
+}
+.orderDetailsCartItemsContainer > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.orderDetailsCartItemsContainer > div > div > img {
+  width: 3vmax;
+}
+
+.orderDetailsCartItemsContainer > div > div > a {
+  color: #575757;
+  margin: 0 2vmax;
+  font: 400 1.1vmax "Oswald";
+  /* width: 60%; */
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.orderDetailsCartItemsContainer > div > span {
+  font: 100 1.1vmax "Oswald";
+  color: #5e5e5e;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .orderDetailsCartItems {
+    padding: 2vmax 0;
+  }
+  .orderDetailsContainer > p {
+    font: 400 6vw "Oswald";
+  }
+
+  .orderDetailsContainerBox > div {
+    margin: 6vw 0;
+  }
+
+  .orderDetailsContainerBox > div > p {
+    font: 400 4vw "Oswald";
+  }
+  .orderDetailsContainerBox > div > span {
+    font: 100 4vw "Oswald";
+  }
+
+  .orderDetailsCartItems > p {
+    font: 400 6vw "Oswald";
+  }
+
+  .orderDetailsCartItemsContainer > div {
+    font: 400 4vw "Oswald";
+    margin: 4vw 0;
+  }
+
+  .orderDetailsCartItemsContainer > div > img {
+    width: 10vw;
+  }
+
+  .orderDetailsCartItemsContainer > div > a {
+    margin: 2vw;
+    width: 30%;
+  }
+
+  .orderDetailsCartItemsContainer > div > span {
+    font: 100 3vw "Oswald";
+  }
+}

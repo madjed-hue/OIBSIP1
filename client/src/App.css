@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+button,
+span {
+  font-family: "Oswald", sans-serif !important;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input[type="submit"] {
+  background: linear-gradient(tomato, tomato 50%, #d2401e 50%, #d2401e);
+  background-size: 100% 200%;
+  transition: background 0.3s ease-in-out !important;
+}
+button:hover,
+input[type="submit"]:hover {
+  background-position: 100% 100%;
+}
+.app {
+  overflow-x: hidden;
+}

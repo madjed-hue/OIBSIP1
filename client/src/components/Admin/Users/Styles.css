@@ -1,0 +1,137 @@
+.newCompContainer {
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.newCompContainer h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Oswald";
+  text-align: center;
+}
+
+.createCompForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3vmax;
+  justify-content: space-evenly;
+  height: 70%;
+  width: 40vh;
+  background-color: #f2f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.createCompForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.createCompForm > div > input,
+.createCompForm > div > select,
+.createCompForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax "Open sans";
+  outline: none;
+}
+
+.createCompForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#createCompFormFile > input {
+  display: flex;
+  padding: 0%;
+}
+
+#createCompFormFile > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax "Open sans";
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#createCompFormFile > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+#createCompFormImage {
+  width: 100%;
+  overflow: auto;
+}
+
+#createCompFormImage > img {
+  width: 3vmax;
+  margin: 0 0.5vmax;
+}
+#createCompBtn {
+  border: none;
+  background-color: #ffbf00;
+  color: white;
+  font: 300 0.9vmax "Oswald";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+#createCompBtn:hover {
+  background-color: tomato;
+}
+
+@media screen and (max-width: 768px) {
+  .newCompContainer {
+    background-color: rgb(255, 255, 255);
+  }
+  .createCompForm {
+    padding: 5vmax;
+  }
+
+  .createCompForm > div > input,
+  .createCompForm > div > select,
+  .createCompForm > div > textarea {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax "Open sans";
+  }
+
+  .createCompForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #createCompFormFile > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #createCompFormFile > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax "Open sans";
+  }
+
+  #createCompBtn {
+    font: 300 1.9vmax "Oswald";
+    padding: 1.8vmax;
+  }
+}

@@ -1,0 +1,187 @@
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyCart > svg {
+  font-size: 5vmax;
+  color: tomato;
+}
+.emptyCart > p {
+  font-size: 2.5vmax;
+  letter-spacing: 1px;
+  margin: 2vmax 0;
+}
+.emptyCart > a {
+  background-color: #d2401e;
+  color: #fff;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1.2vmax "Oswald";
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.cartPage {
+  padding: 5vmax;
+}
+
+.cartHeader {
+  background-color: tomato;
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  font: 300 1vmax "Oswald";
+  letter-spacing: 1px;
+}
+.cartHeader > p {
+  margin: 10px;
+}
+.cartHeader > p:last-child {
+  text-align: end;
+}
+
+.cartContainer {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+}
+
+.cartInput {
+  display: flex;
+  align-items: center;
+  height: 8vmax;
+}
+
+.cartInput > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+.cartInput > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.cartInput > input {
+  border: none;
+  /* padding: 0.5vmax 0; */
+  padding-left: 8px;
+  text-align: center;
+  max-width: 3vmax;
+  outline: none;
+  font: 400 1.1vmax "Oswald";
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.cartSubtotal {
+  display: flex;
+  padding: 0.5vmax;
+  height: 8vmax;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1.2vmax;
+  font-weight: 400;
+  justify-content: flex-end;
+  color: rgba(0, 0, 0, 0.753);
+}
+
+.cartGrossProfit {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+.cartGrossProfit p {
+  font-size: 1.2vmax;
+}
+.cartGrossProfitBox {
+  border-top: 3px solid tomato;
+  margin: 1vmax 4vmax;
+  box-sizing: border-box;
+  padding: 2vmax 1vmax 3vmax 5vmax;
+  font: 300 1vmax "Oswald";
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkOutBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.checkOutBtn > button {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 0.8vmax 4vmax;
+  width: 50%;
+  font: 300 1.2vmax "Oswald";
+  margin: 1vmax 4vmax;
+  cursor: pointer;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .cartPage {
+    padding: 0;
+    min-height: 60vh;
+    padding-top: 12vmax;
+  }
+
+  .cartHeader {
+    width: 100%;
+    font: 300 1.7vmax "Oswald";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .cartContainer {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .cartInput {
+    height: 20vmax;
+  }
+
+  .cartInput > button {
+    padding: 1.5vmax;
+  }
+
+  .cartInput > input {
+    width: 2vmax;
+    padding: 0;
+    font: 400 1.8vmax "Oswald";
+  }
+
+  .cartSubtotal {
+    padding: 1.5vmax;
+    height: 20vmax;
+    font: 300 2vmax "Oswald";
+  }
+
+  .cartGrossProfit {
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+  }
+
+  .cartGrossProfitBox {
+    padding: 2vmax;
+    font: 300 2vmax "Oswald";
+  }
+
+  .checkOutBtn > button {
+    padding: 2vmax 4vmax;
+    width: 100%;
+    font: 300 2vmax "Oswald";
+  }
+}

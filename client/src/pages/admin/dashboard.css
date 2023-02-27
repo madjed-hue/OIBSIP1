@@ -1,0 +1,6 @@
+.ps-menu-button {
+  transition: all 0.3s ease-in-out;
+}
+.ps-menu-button:hover {
+  background-color: tomato !important;
+}
