@@ -228,7 +228,6 @@ export const validateVerification = (token) => async (dispatch) => {
       payload: data.message,
     });
   } catch (error) {
-    console.log(error);
     dispatch({
       type: "VALIDATE_USER_FAIL",
       payload: error.response,
@@ -241,7 +240,6 @@ export const getAllUsers = () => async (dispatch) => {
   try {
     dispatch({ type: "ALL_USERS_REQUEST" });
     const { data } = await axios.get(`/api/v1/admin/users`);
-    // console.log(data);
 
     dispatch({ type: "ALL_USERS_SUCCESS", payload: data.users });
   } catch (error) {
@@ -292,8 +290,6 @@ export const deleteUser = (id) => async (dispatch) => {
     dispatch({ type: "DELETE_USER_REQUEST" });
 
     const { data } = await axios.delete(`/api/v1/admin/user/${id}`);
-
-    console.log(data);
 
     dispatch({ type: "DELETE_USER_SUCCESS", payload: data });
   } catch (error) {

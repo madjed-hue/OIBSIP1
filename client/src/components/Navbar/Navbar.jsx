@@ -10,10 +10,8 @@ import {
   AiFillCaretRight,
   AiOutlineHome,
   AiOutlineMenu,
-  AiOutlineInfoCircle,
   AiOutlineMail,
   AiOutlineLogin,
-  AiOutlineSave,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import "./Navbar.css";

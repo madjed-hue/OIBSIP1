@@ -44,8 +44,6 @@ function App() {
     setStripeApiKey(data.stripeApiKey);
   }
 
-  console.log(user);
-
   useEffect(() => {
     dispatch(loadUser());
     getStripeApikey();

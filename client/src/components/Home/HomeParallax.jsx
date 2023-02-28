@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import { ParalaxBg } from "../../assets";
 
 const HomeParallax = ({ isMobile }) => {

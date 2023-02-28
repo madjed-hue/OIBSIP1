@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Box, IconButton, InputBase, Typography } from "@mui/material";
+import { Badge, Box, IconButton, InputBase } from "@mui/material";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";

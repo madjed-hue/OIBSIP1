@@ -7,8 +7,6 @@ import Pagination from "react-js-pagination";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import Loader from "../../components/layout/Loader";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import "./Pizzas.css";
 import { getAllPizza } from "../../actions/pizzaAction";
 import Layout from "../../components/layout/Layout";
@@ -25,7 +23,6 @@ const categories = [
 
 const Pizzas = () => {
   const dispatch = useDispatch();
-  const MySwal = withReactContent(Swal);
   const [currentPage, setCurrentPage] = useState(1);
   const [price, setPrice] = useState([0, 25000]);
   const [category, setCategory] = useState("");
@@ -41,10 +38,6 @@ const Pizzas = () => {
     filteredPizzaCount,
   } = useSelector((state) => state.pizzas);
 
-  useEffect(() => {
-    <MetaData title="Menu-Pizzario" />;
-  }, []);
-
   const [searchWord, setSearchWord] = useState("");
 
   const { keyword } = useParams();
@@ -58,18 +51,11 @@ const Pizzas = () => {
 
   useEffect(() => {
     if (error) {
-      MySwal.fire({
-        title: "Error!",
-        text: `${error}`,
-        icon: "error",
-        confirmButtonText: "Close",
-      });
+      alert.error(error);
       dispatch({ type: "CLEAR_ERRORS" });
     }
     dispatch(getAllPizza(keyword, currentPage, category, ratings));
-  }, [currentPage, dispatch, keyword, price, category, ratings, error, alert]);
-
-  let count = filteredPizzaCount;
+  }, [category, currentPage, dispatch, error, keyword, ratings]);
 
   const searchSubmitHandler = (e) => {
     e.preventDefault();
@@ -87,7 +73,7 @@ const Pizzas = () => {
       ) : (
         <Layout>
           <Fragment>
-            {/* <MetaData title="Menu -- Sahouane Store" /> */}
+            <MetaData title="Menu - Pizzario" />
             <h2 className="pizzasHeading">Menu</h2>
             <Fragment>
               <form className="searchBox" onSubmit={searchSubmitHandler}>

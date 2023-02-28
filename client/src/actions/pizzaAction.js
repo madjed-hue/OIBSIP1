@@ -54,13 +54,11 @@ export const getPizzaDetails = (id) => async (dispatch) => {
       type: "GET_PIZZA_DETAILS_REQUEST",
     });
     const { data } = await axios.get(`/api/v1/pizza/${id}`);
-    // console.log(data);
     dispatch({
       type: "GET_PIZZA_DETAILS_SUCCESS",
       payload: data.pizza,
     });
   } catch (error) {
-    console.log(error);
     dispatch({
       type: "GET_PIZZA_DETAILS_FAILURE",
       payload: error.response.data.message,
@@ -168,7 +166,6 @@ export const getAllReviews = (id) => async (dispatch) => {
     dispatch({ type: "ALL_REVIEW_REQUEST" });
 
     const { data } = await axios.get(`/api/v1/reviews?id=${id}`);
-    console.log(data);
     dispatch({
       type: "ALL_REVIEW_SUCCESS",
       payload: data.reviews,

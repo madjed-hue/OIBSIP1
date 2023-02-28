@@ -15,15 +15,12 @@ const Cart = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
-  // console.log(cartItems);
-
   const increaseQuantity = (id, quantity, stock, price, sauceId, cheeseId) => {
     const newQty = quantity + 1;
     if (stock <= quantity) {
       return;
     }
     dispatch(addItemsToCart(id, newQty, price, sauceId, cheeseId));
-    console.log(newQty);
   };
   const decreaseQuantity = (id, quantity, price, sauceId, cheeseId) => {
     const newQty = quantity - 1;

@@ -29,7 +29,7 @@ const Services = () => {
             <Stack spacing={1} textAlign="center">
               <img
                 src={Delivery}
-                alt="delivery image"
+                alt="delivery"
                 width={100}
                 height={77}
                 style={{ margin: "auto", opacity: 0.7 }}
@@ -46,7 +46,7 @@ const Services = () => {
             <Stack spacing={1} textAlign="center">
               <img
                 src={PizzaOrder}
-                alt="order image"
+                alt="order"
                 width={100}
                 height={77}
                 style={{ margin: "auto", opacity: 0.7 }}
@@ -63,7 +63,7 @@ const Services = () => {
             <Stack spacing={1} textAlign="center">
               <img
                 src={Seat}
-                alt="Reservations image"
+                alt="Reservations"
                 width={100}
                 height={77}
                 style={{ margin: "auto", opacity: 0.7 }}
@@ -80,7 +80,7 @@ const Services = () => {
             <Stack spacing={1} textAlign="center" margin="auto">
               <img
                 src={CutPizza}
-                alt="cutering image"
+                alt="cutering"
                 width={100}
                 height={77}
                 style={{ margin: "auto", opacity: 0.7 }}

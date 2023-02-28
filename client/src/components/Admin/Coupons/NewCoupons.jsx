@@ -3,7 +3,6 @@ import "../newPizza.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import Button from "@mui/material/Button";
-import StorageIcon from "@mui/icons-material/Storage";
 import { RiCoupon2Line } from "react-icons/ri";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import { useNavigate } from "react-router-dom";

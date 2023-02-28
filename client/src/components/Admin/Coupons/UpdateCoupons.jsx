@@ -23,8 +23,6 @@ const UpdateCoupons = () => {
 
   const { id } = useParams();
 
-  // console.log(coupons);
-
   useEffect(() => {
     if (coupons && coupons._id !== id) {
       dispatch(getCoupons(id));

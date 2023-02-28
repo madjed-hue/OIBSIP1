@@ -8,7 +8,6 @@ export const getAllMessages = () => async (dispatch) => {
     });
 
     const { data } = await axios.get("/api/v1/admin/messages");
-    // console.log(data);
     dispatch({
       type: "GET_ALL_MESSAGES_SUCCESS",
       payload: data.messages,

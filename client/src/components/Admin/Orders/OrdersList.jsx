@@ -1,10 +1,9 @@
 import React, { Fragment, useEffect } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import Header from "../Header/Header";
-import Avatar from "@mui/material/Avatar";
 import { Link, useNavigate } from "react-router-dom";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";

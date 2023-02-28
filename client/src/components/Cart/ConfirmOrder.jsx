@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CheckoutSteps from "../Cart/CheckoutSteps";
 import { useDispatch, useSelector } from "react-redux";
 import "./ConfirmOrder.css";
@@ -25,8 +25,6 @@ const ConfirmOrder = () => {
 
   const { coupons, error } = useSelector((state) => state.coupons);
 
-  // console.log(coupons);
-
   useEffect(() => {
     if (error) {
       alert.error(error);
@@ -50,7 +48,6 @@ const ConfirmOrder = () => {
     }
   };
 
-  // console.log(cartItems);
   const deliveryCharges = 0;
 
   const tax = subtotal * 0;

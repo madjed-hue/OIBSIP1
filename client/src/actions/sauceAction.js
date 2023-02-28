@@ -72,8 +72,6 @@ export const createSauce = (sauceData) => async (dispatch) => {
       config
     );
 
-    console.log(data);
-
     dispatch({
       type: "NEW_SAUCE_SUCCESS",
       payload: data,

@@ -8,7 +8,7 @@ import { getAllCheese } from "../../../actions/cheeseAction";
 import { getAllSauce } from "../../../actions/sauceAction";
 import DashboardLoader from "../Loader/DashboardLoader";
 
-export const SaucePieChart = ({ isDashboard = false }) => {
+export const SaucePieChart = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
   const {
@@ -91,7 +91,7 @@ export const SaucePieChart = ({ isDashboard = false }) => {
   );
 };
 
-export const PizzaPieChart = ({ isDashboard }) => {
+export const PizzaPieChart = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
 
@@ -103,7 +103,6 @@ export const PizzaPieChart = ({ isDashboard }) => {
 
   const pizzaPieData = [];
 
-  // useEffect(() => {
   const generateData = (oldArr, newArr) => {
     oldArr &&
       oldArr.forEach((el) => {
@@ -118,7 +117,6 @@ export const PizzaPieChart = ({ isDashboard }) => {
   };
 
   generateData(pizzas, pizzaPieData);
-  // }, []);
 
   useEffect(() => {
     if (pizzaError) {
@@ -172,7 +170,7 @@ export const PizzaPieChart = ({ isDashboard }) => {
   );
 };
 
-export const CheesePieChart = ({ isDashboard }) => {
+export const CheesePieChart = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
 

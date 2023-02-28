@@ -54,8 +54,6 @@ const MainDashboard = () => {
   const { sauces, error: sauceError } = useSelector((state) => state.sauces);
   const { users, error: usersError } = useSelector((state) => state.allUsers);
 
-  // console.log(orders);
-
   useEffect(() => {
     const checkStock = (arr) => {
       arr?.forEach((el) => {

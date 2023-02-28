@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Carousel from "react-material-ui-carousel";
 import "./PizzaDetails.css";
 import { useSelector, useDispatch } from "react-redux";
 import { getPizzaDetails, newReview } from "../../actions/pizzaAction";
@@ -30,8 +29,6 @@ const PizzaDetails = () => {
   const { success, error: reviewError } = useSelector(
     (state) => state.newReview
   );
-
-  // console.log(pizza);
 
   const { id } = useParams();
 
@@ -92,7 +89,7 @@ const PizzaDetails = () => {
       dispatch({ type: "NEW_REVIEW_RESET" });
     }
     dispatch(getPizzaDetails(id));
-  }, [dispatch, error, id, reviewError, success]);
+  }, [alert, dispatch, error, id, reviewError, success]);
 
   const options = {
     name: "simple-controlled",
