@@ -133,8 +133,8 @@ const Pizzas = () => {
               </fieldset>
             </div>
 
-            <div className="paginationBox">
-              {resultPerPage < pizzaCount && (
+            {resultPerPage < count && (
+              <div className="paginationBox">
                 <Pagination
                   activePage={currentPage}
                   itemsCountPerPage={resultPerPage}
@@ -149,8 +149,8 @@ const Pizzas = () => {
                   activeClass="pageItemActive"
                   activeLinkClass="pageLinkActive"
                 />
-              )}
-            </div>
+              </div>
+            )}
           </Fragment>
         </Layout>
       )}
