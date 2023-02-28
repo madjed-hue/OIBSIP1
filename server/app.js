@@ -13,6 +13,8 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 export const app = express();
 
+app.use(cors());
+
 app.use(errorMiddleWear);
 
 app.use(express.json({ limit: "50mb" }));
@@ -21,7 +23,6 @@ app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 app.use(express.static("public"));
-app.use(cors());
 
 import { userRoutes } from "./routes/userRoutes.js";
 import { pizzaRoutes } from "./routes/pizzaRoutes.js";
