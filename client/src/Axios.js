@@ -4,6 +4,6 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "https://backend-kcrk.onrender.com",
-  withCredentials: true,
+  credentials: "include",
 });
 export default instance;
