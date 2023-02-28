@@ -355,20 +355,6 @@ const MainDashboard = () => {
               </Box>
             </Box>
           </Grid>
-          {/* <Grid xs={12}>
-            <Box backgroundColor="#f2f0f0" padding="30px">
-              <Typography
-                variant="h5"
-                fontWeight="600"
-                sx={{ marginBottom: "15px" }}
-              >
-                Geography Based Traffic
-              </Typography>
-              <Box height="200px">
-                <GeographyChart isDashboard={true} />
-              </Box>
-            </Box>
-          </Grid> */}
         </Grid>
       </Grid>
     </Box>
