@@ -1,4 +1,4 @@
-import axios from "../Axios";
+import axios from "axios";
 
 //Get all Sauces
 export const getAllSauce = () => async (dispatch) => {

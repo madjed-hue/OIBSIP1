@@ -1,4 +1,4 @@
-import axios from "../Axios";
+import axios from "axios";
 
 //Get all COUPONSs
 export const getAllCoupons = () => async (dispatch) => {
