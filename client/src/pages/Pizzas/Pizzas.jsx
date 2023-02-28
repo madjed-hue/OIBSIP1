@@ -66,6 +66,8 @@ const Pizzas = () => {
     }
   };
 
+  const count = filteredPizzaCount;
+
   return (
     <Fragment>
       {loading ? (

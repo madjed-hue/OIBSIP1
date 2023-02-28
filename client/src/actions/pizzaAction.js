@@ -16,6 +16,7 @@ export const getAllPizza =
         link = `/api/v1/pizza/all`;
       }
       const { data } = await axios.get(link);
+      console.log(data);
       dispatch({
         type: "GET_ALL_PIZZA_SUCCESS",
         payload: data,

@@ -48,12 +48,12 @@ const OrdersList = () => {
   orders?.length &&
     orders?.forEach((order) => {
       const userInfo = {
-        id: order._id,
-        status: order.orderStatus,
-        itemsQty: order.orderItems.length,
-        amount: order.totalPrice,
-        coupons: order.couponPrice,
-        user: order.user.name,
+        id: order?._id,
+        status: order?.orderStatus,
+        itemsQty: order?.orderItems?.length,
+        amount: order?.totalPrice,
+        coupons: order?.couponPrice,
+        user: order?.user?.name,
       };
       data.push(userInfo);
     });
