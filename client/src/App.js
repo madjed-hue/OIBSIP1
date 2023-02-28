@@ -25,7 +25,7 @@ import {
   VerifyUser,
   VerifiedUser,
 } from "./pages";
-import axios from "axios";
+import axios from "./Axios";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import Chatbot from "./components/ChatBot/Chatbot";
