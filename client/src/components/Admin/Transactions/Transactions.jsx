@@ -14,10 +14,10 @@ const Transactions = () => {
   orders?.length &&
     orders?.forEach((order) => {
       const orderInfo = {
-        txId: order.paymentInfo.id,
-        user: order.user.name,
-        date: order.paisAt.split("T")[0],
-        cost: order.totalPrice,
+        txId: order?.paymentInfo.id,
+        user: order?.user?.name,
+        date: order?.paisAt.split("T")[0],
+        cost: order?.totalPrice,
       };
       data.push(orderInfo);
     });
@@ -65,13 +65,13 @@ const Transactions = () => {
                 >
                   <Box>
                     <Typography variant="h6" fontWeight="500" color="#0f2922">
-                      {transaction.txId}
+                      {transaction?.txId}
                     </Typography>
                     <Typography color="#141414">{transaction.user}</Typography>
                   </Box>
-                  <Box color="#141414">{transaction.date}</Box>
+                  <Box color="#141414">{transaction?.date}</Box>
                   <Box color="#4cceac" p="5px 10px" borderRadius="4px">
-                    ${transaction.cost}
+                    ${transaction?.cost}
                   </Box>
                 </Box>
               );
