@@ -16,7 +16,7 @@ export const app = express();
 app.use(
   cors({
     origin: "https://fateh-pizzario.netlify.app",
-    credentials: "include",
+    credentials: true,
   })
 );
 
