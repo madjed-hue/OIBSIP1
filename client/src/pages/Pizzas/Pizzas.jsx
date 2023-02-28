@@ -122,7 +122,7 @@ const Pizzas = () => {
               </fieldset>
             </div>
 
-            {resultPerPage < count && (
+            {resultPerPage < pizzaCount && (
               <div className="paginationBox">
                 <Pagination
                   activePage={currentPage}
