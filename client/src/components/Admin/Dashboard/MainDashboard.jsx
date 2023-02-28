@@ -57,7 +57,7 @@ const MainDashboard = () => {
   useEffect(() => {
     const checkStock = (arr) => {
       arr?.forEach((el) => {
-        if (el.stock < 8) {
+        if (el.stock < 3) {
           const notificationInfo = {
             id: el._id,
             name: el.name,
