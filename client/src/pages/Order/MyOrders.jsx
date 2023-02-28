@@ -113,10 +113,3 @@ const MyOrders = () => {
 };
 
 export default MyOrders;
-
-// Function that applies CSS classes dynamically on cells.
-
-// Signature:
-// function(params: GridCellParams) => string
-// params: With all properties from GridCellParams.
-// returns (string): The CSS class to apply to the cell.

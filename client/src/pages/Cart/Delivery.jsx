@@ -61,12 +61,7 @@ const Delivery = () => {
               />
             </div>
 
-            <input
-              type="submit"
-              value="Continue"
-              className="shippingBtn"
-              //   disabled={state ? false : true}
-            />
+            <input type="submit" value="Continue" className="shippingBtn" />
           </form>
         </div>
       </div>
