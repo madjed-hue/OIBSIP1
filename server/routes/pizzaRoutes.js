@@ -21,7 +21,6 @@ pizzaRoutes
   .post(isAuthenticatedUser, authorizeRoles("admin"), createPizza);
 
 //get all pizza (users)
-// pizzaRoutes.route("/pizza/all").get(isAuthenticatedUser, getAllPizza);
 pizzaRoutes.route("/pizza/all").get(getAllPizza);
 
 //get all pizza (admin)

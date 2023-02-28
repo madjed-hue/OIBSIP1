@@ -49,7 +49,6 @@ export const loginUser = catchAsyncError(async (req, res, next) => {
   if (!isPasswordMatched) {
     return next(new ErrorHundeler("Invalid Email or Password", 401));
   }
-  //   console.log(user);
   sendToken(user, 200, res);
 });
 

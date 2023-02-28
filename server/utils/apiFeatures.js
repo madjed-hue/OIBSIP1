@@ -30,7 +30,7 @@ class ApiFeatures {
       delete queryCopy[key];
     });
 
-    //Filter for Price and Rating
+    //Filter for  Rating
     let queryStr = JSON.stringify(queryCopy);
     queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (key) => `$${key}`);
 

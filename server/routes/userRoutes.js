@@ -16,7 +16,6 @@ import {
   resendVerifyEmail,
 } from "../controllers/userController.js";
 import { authorizeRoles, isAuthenticatedUser } from "../middleware/auth.js";
-// import { isAuthenticatedUser, authorizeRoles } from "../middlewear/auth";
 export const userRoutes = express.Router();
 
 userRoutes.route("/register").post(registerUser);

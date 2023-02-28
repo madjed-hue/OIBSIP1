@@ -12,8 +12,6 @@ export const newOrder = catchAsyncError(async (req, res, next) => {
     orderItems,
     paymentInfo,
     itemsPrice,
-    // sauceTypes,
-    // cheeseTypes,
     couponPrice,
     deliveryPrice,
     totalPrice,
@@ -24,8 +22,6 @@ export const newOrder = catchAsyncError(async (req, res, next) => {
     orderItems,
     paymentInfo,
     itemsPrice,
-    // sauceTypes,
-    // cheeseTypes,
     couponPrice,
     deliveryPrice,
     totalPrice,
@@ -46,8 +42,6 @@ export const getSingleOrder = catchAsyncError(async (req, res, next) => {
     "name email"
   );
 
-  // await order.populate("cheese");
-  // .populate({ path: "orderItems", model: "cheese" });
   if (!order) {
     return next(new ErrorHundeler("Order Not Found", 404));
   }

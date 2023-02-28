@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import isEmail from "validator/lib/isEmail.js";
-// const validator = require("mongoose-validator");
 import pkg from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { randomBytes, createHash } from "crypto";

@@ -5,8 +5,6 @@ import cloudinary from "cloudinary";
 
 //Create Cheese
 export const createCheese = catchAsyncError(async (req, res, next) => {
-  // const { name, price, stock, image } = req.body;
-
   const myCloud = await cloudinary.v2.uploader.upload(req.body.image, {
     folder: "pizza/cheeses",
   });
