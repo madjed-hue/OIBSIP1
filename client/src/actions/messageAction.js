@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../Axios";
 
 //Get all Messages
 export const getAllMessages = () => async (dispatch) => {

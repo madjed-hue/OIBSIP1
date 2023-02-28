@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../Axios";
 
 // Add to Cart
 export const addItemsToCart =
