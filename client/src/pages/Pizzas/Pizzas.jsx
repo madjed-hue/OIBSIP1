@@ -95,17 +95,6 @@ const Pizzas = () => {
             </div>
 
             <div className="filterBox">
-              <Typography>Price</Typography>
-              <Slider
-                value={price}
-                onChange={priceHandler}
-                valueLabelDisplay="auto"
-                aria-labelledby="range-slider"
-                min={0}
-                max={25000}
-                size="small"
-                color="primary"
-              />
               <Typography>Categories</Typography>
               <ul className="categoryBox">
                 {categories.map((category) => (

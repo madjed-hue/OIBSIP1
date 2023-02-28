@@ -12,9 +12,9 @@ export const getAllPizza =
       if (category) {
         link = `/api/v1/pizza/all?keyword=${keyword}&page=${currentPage}&category=${category}&ratings[gte]=${ratings}`;
       }
-      if (!keyword && !category && !currentPage && !ratings) {
-        link = `/api/v1/pizza/all`;
-      }
+      // if (!keyword && !category && !currentPage && !ratings) {
+      //   link = `/api/v1/pizza/all`;
+      // }
       const { data } = await axios.get(link);
       dispatch({
         type: "GET_ALL_PIZZA_SUCCESS",
