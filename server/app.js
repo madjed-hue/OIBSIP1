@@ -13,7 +13,12 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 export const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://fateh-pizzario.netlify.app",
+    credentials: "include",
+  })
+);
 
 app.use(errorMiddleWear);
 
