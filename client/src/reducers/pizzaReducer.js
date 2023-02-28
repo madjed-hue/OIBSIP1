@@ -11,7 +11,7 @@ export const pizzaReducer = (state = { pizzas: [] }, action) => {
         loading: false,
         pizzas: action.payload.pizzas,
         pizzaCount: action.payload.pizzaCount,
-        resultParPage: action.payload.resultParPage,
+        resultPerPage: action.payload.resultPerPage,
         filteredPizzaCount: action.payload.filteredPizzaCount,
       };
     case "GET_ALL_PIZZA_ADMIN_SUCCESS":
